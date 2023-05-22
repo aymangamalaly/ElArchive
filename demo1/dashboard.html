@@ -1,0 +1,1223 @@
+<!DOCTYPE html> 
+<!--
+Template Name: NobleUI - HTML Bootstrap 5 Admin Dashboard Template
+Author: NobleUI
+Website: https://www.nobleui.com
+Portfolio: https://themeforest.net/user/nobleui/portfolio
+Contact: nobleui123@gmail.com
+Purchase: https://1.envato.market/nobleui_admin
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+--> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <meta name="description" content="Responsive HTML Admin Dashboard Template based on Bootstrap 5"> 
+        <meta name="author" content="NobleUI"> 
+        <meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web"> 
+        <title>El Archieve</title>         
+        <!-- Fonts -->         
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+        <!-- End fonts -->         
+        <!-- core:css -->         
+        <link rel="stylesheet" href="../assets/vendors/core/core.css"> 
+        <!-- endinject -->         
+        <!-- Plugin css for this page -->         
+        <link rel="stylesheet" href="../assets/vendors/flatpickr/flatpickr.min.css"> 
+        <!-- End plugin css for this page -->         
+        <!-- inject:css -->         
+        <link rel="stylesheet" href="../assets/fonts/feather-font/css/iconfont.css"> 
+        <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css"> 
+        <!-- endinject -->         
+        <!-- Layout styles -->         
+        <link rel="stylesheet" href="../assets/css/demo1/style.css"> 
+        <!-- End layout styles -->         
+        <link rel="shortcut icon" href="../assets/images/favicon.png"/> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+
+    </head>     
+    <body> 
+                <div class="main-wrapper"> 
+            <!-- partial:partials/_sidebar.html -->  
+                    
+            <nav class="sidebar"> 
+                <div class="sidebar-header"> 
+                    <img src="../assets/images/Logo1.png" width="30" height="49" alt="El Arhive"/> 
+                    <a href="#" class="sidebar-brand">El Archive</a> 
+                    <div class="sidebar-toggler not-active"> 
+                        <span></span> 
+                        <span></span> 
+                        <span></span> 
+                    </div>                     
+                </div>                 
+                <div class="sidebar-body"> 
+                    <ul class="nav"> 
+                        <li class="nav-item nav-category">Main</li>                         
+                        <li class="nav-item"> 
+                            <a href="dashboard.html" class="nav-link">  <i class="link-icon" data-feather="box"></i>  <span class="link-title">Dashboard</span>  </a> 
+                        </li>                         
+                        <li class="nav-item nav-category"></li>                         
+                        <li class="nav-item"> 
+                            <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">  <i class="link-icon" data-feather="mail"></i>  <span class="link-title">Document Setup</span>  <i class="link-arrow" data-feather="chevron-down"></i>  </a> 
+                            <div class="collapse" id="emails"> 
+                                <ul class="nav sub-menu"> 
+                                    <li class="nav-item"> 
+                                      <a href="" class="nav-link">Document types</a> 
+                                    </li>                                     
+                                    <li class="nav-item"> 
+                                      <a href="" class="nav-link">Folder Properties</a> 
+                                    </li>                                     
+                                    <li class="nav-item"> 
+                                      <a href="" class="nav-link">Folder Types</a> 
+                                    </li>                                     
+                                </ul>                                 
+                            </div>                             
+                        </li>                         
+                        <li class="nav-item"> 
+                          <a href="" class="nav-link">  <i class="link-icon" data-feather="message-square"></i>  <span class="link-title">Departments</span>  </a> 
+                        </li>                         
+                        <li class="nav-item"> 
+                            <a href="" class="nav-link">  <i class="link-icon" data-feather="calendar"></i>  <span class="link-title">General Settings</span>  </a> 
+                        </li>                         
+                        <li class="nav-item nav-category"></li>                         
+                        <li class="nav-item"> 
+                            <a class="nav-link" data-bs-toggle="collapse" href="#uiComponents" role="button" aria-expanded="false" aria-controls="uiComponents">  <i class="link-icon" data-feather="feather"></i>  <span class="link-title">User Management</span>  <i class="link-arrow" data-feather="chevron-down"></i>  </a> 
+                            <div class="collapse" id="uiComponents"> 
+                                <ul class="nav sub-menu"> 
+                                    <li class="nav-item"> 
+                                      <a href="" class="nav-link">Users</a> 
+                                    </li>                                     
+                                    <li class="nav-item"> 
+                                      <a href="" class="nav-link">Grouos</a> 
+                                    </li>                                     
+                                                                         
+                                </ul>                                 
+                            </div>                             
+                        </li>                         
+                        <li class="nav-item"> 
+                            <a class="nav-link" data-bs-toggle="collapse" href="#advancedUI" role="button" aria-expanded="false" aria-controls="advancedUI">  <i class="link-icon" data-feather="anchor"></i>  <span class="link-title">Quality Control</span>  <i class="link-arrow" data-feather="chevron-down"></i>  </a> 
+                            <div class="collapse" id="advancedUI"> 
+                                                                 
+                            </div>                             
+                        </li>                         
+                        <li class="nav-item"> 
+                            <a class="nav-link" data-bs-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">  <i class="link-icon" data-feather="inbox"></i>  <span class="link-title">Audit Trail</span>  <i class="link-arrow" data-feather="chevron-down"></i>  </a> 
+                            <div class="collapse" id="forms"> 
+                                                             
+                            </div>                             
+                        </li>                         
+                        <li class="nav-item"> 
+                            <a class="nav-link" data-bs-toggle="collapse" href="#charts" role="button" aria-expanded="false" aria-controls="charts">  <i class="link-icon" data-feather="pie-chart"></i>  <span class="link-title">Reports</span>  <i class="link-arrow" data-feather="chevron-down"></i>  </a> 
+                            <div class="collapse" id="charts"> 
+                                 
+                            </div>                             
+                        </li>                         
+                                               
+                        <li class="nav-item nav-category"></li>                         
+                        <li class="nav-item"> 
+                            <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" role="button" aria-expanded="false" aria-controls="general-pages">  <i class="link-icon" data-feather="book"></i>  <span class="link-title">SEARCH</span>  <i class="link-arrow" data-feather="chevron-down"></i>  </a> 
+                            <div class="collapse" id="general-pages"> 
+                                <ul class="nav sub-menu"> 
+                                    <li class="nav-item"> 
+                                      <a href="" class="nav-link">Doc Search</a> 
+                                    </li>                                     
+                                    <li class="nav-item"> 
+                                      <a href="" class="nav-link">File Search</a> 
+                                    </li>                                     
+                                                                      
+                                   
+                </ul>                                 
+                            </div>                             
+                        </li>                         
+                        
+                                             
+                                          
+                    </ul>                     
+                </div>                 
+            </nav>             
+            
+            <!-- partial -->             
+            <div class="page-wrapper"> 
+                <!-- partial:partials/_navbar.html -->                 
+                <nav class="navbar"> 
+                    <a href="#" class="sidebar-toggler">  <i data-feather="menu"></i>  </a> 
+                    <div class="navbar-content"> 
+                        <form class="search-form"> 
+                            <div class="input-group"> 
+                                <div class="input-group-text"> 
+                                    <i data-feather="search"></i> 
+                                </div>                                 
+                                <input type="text" class="form-control" id="navbarForm" placeholder="Search here..."> 
+                            </div>                             
+                        </form>                         
+                        <ul class="navbar-nav"> 
+                            <li class="nav-item dropdown"> 
+                                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="flag-icon flag-icon-us mt-1" title="us"></i> <span class="ms-1 me-1 d-none d-md-inline-block">English</span>  </a> 
+                                <div class="dropdown-menu" aria-labelledby="languageDropdown"> 
+                                    <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-us" title="us" id="us"></i> <span class="ms-1"> English </span></a> 
+                                    <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-eg" title="fr" id="fr"></i> <span class="ms-1"> Arabic </span></a> 
+                                </div>                                 
+                            </li>                             
+                                                  
+                             
+                            <li class="nav-item dropdown"> 
+                                <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i data-feather="bell"></i>  <div class="indicator"> 
+                                        <div class="circle"></div>                                         
+                                    </div>  </a> 
+                                <div class="dropdown-menu p-0" aria-labelledby="notificationDropdown"> 
+                                    <div class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom"> 
+                                        <p>6 New Notifications</p> 
+                                        <a href="javascript:;" class="text-muted">Clear all</a> 
+                                    </div>                                     
+                                    <div class="p-1"> 
+                                        <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">  <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"> 
+                                                <i class="icon-sm text-white" data-feather="gift"></i> 
+                                            </div>  <div class="flex-grow-1 me-2"> 
+                                                <p>New Documents</p> 
+                                                <p class="tx-12 text-muted">30 min ago</p> 
+                                            </div>  </a> 
+                                        <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">  <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"> 
+                                                <i class="icon-sm text-white" data-feather="alert-circle"></i> 
+                                            </div>  <div class="flex-grow-1 me-2"> 
+                                                <p>Server Limit Reached!</p> 
+                                                <p class="tx-12 text-muted">1 hrs ago</p> 
+                                            </div>  </a> 
+                                        <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">  <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"> 
+                                                <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="userr"> 
+                                            </div>  <div class="flex-grow-1 me-2"> 
+                                                <p>Rejected Documents</p> 
+                                                <p class="tx-12 text-muted">2 sec ago</p> 
+                                            </div>  </a> 
+                                        <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">  <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"> 
+                                                <i class="icon-sm text-white" data-feather="layers"></i> 
+                                            </div>  <div class="flex-grow-1 me-2"> 
+                                                <p>Approved Documents</p> 
+                                                <p class="tx-12 text-muted">5 hrs ago</p> 
+                                            </div>  </a> 
+                                        <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">  <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"> 
+                                                <i class="icon-sm text-white" data-feather="download"></i> 
+                                            </div>  <div class="flex-grow-1 me-2"> 
+                                                <p>Downloaded Documents</p> 
+                                                <p class="tx-12 text-muted">6 hrs ago</p> 
+                                            </div>  </a> 
+                                    </div>                                     
+                                    <div class="px-3 py-2 d-flex align-items-center justify-content-center border-top"> 
+                                        <a href="javascript:;">View all</a> 
+                                    </div>                                     
+                                </div>                                 
+                            </li>                             
+                            <li class="nav-item dropdown"> 
+                                <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="profile">  </a> 
+                                <div class="dropdown-menu p-0" aria-labelledby="profileDropdown"> 
+                                    <div class="d-flex flex-column align-items-center border-bottom px-5 py-3"> 
+                                        <div class="mb-3"> 
+                                            <img class="wd-80 ht-80 rounded-circle" src="https://via.placeholder.com/80x80" alt=""> 
+                                        </div>                                         
+                                        <div class="text-center"> 
+                                            <p class="tx-16 fw-bolder">Ayman Gamal</p> 
+                                            <p class="tx-12 text-muted">Ayman.gamal@gmail.com</p> 
+                                        </div>                                         
+                                    </div>                                     
+                                    <ul class="list-unstyled p-1"> 
+                                        <li class="dropdown-item py-2"> 
+                                            <a href="pages/general/profile.html" class="text-body ms-0">  <i class="me-2 icon-md" data-feather="user"></i>  <span>Profile</span>  </a> 
+                                        </li>                                         
+                                        <li class="dropdown-item py-2"> 
+                                            <a href="javascript:;" class="text-body ms-0">  <i class="me-2 icon-md" data-feather="edit"></i>  <span>Edit Profile</span>  </a> 
+                                        </li>                                         
+                                        <li class="dropdown-item py-2"> 
+                                            <a href="javascript:;" class="text-body ms-0">  <i class="me-2 icon-md" data-feather="repeat"></i>  <span>Switch User</span>  </a> 
+                                        </li>                                         
+                                        <li class="dropdown-item py-2"> 
+                                            <a href="javascript:;" class="text-body ms-0">  <i class="me-2 icon-md" data-feather="log-out"></i>  <span>Log Out</span>  </a> 
+                                        </li>                                         
+                                    </ul>                                     
+                                </div>                                 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                </nav>                 
+                <!-- partial -->                 
+                <div class="page-content"> 
+                    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin"> 
+                        <div> 
+                            <h4 class="mb-3 mb-md-0">Welcome to Dashboard</h4> 
+                        </div>                         
+                        <div class="d-flex align-items-center flex-wrap text-nowrap"> 
+                            <div class="input-group flatpickr wd-200 me-2 mb-2 mb-md-0" id="dashboardDate"> 
+                                <span class="input-group-text input-group-addon bg-transparent border-primary" data-toggle><i data-feather="calendar" class="text-primary"></i></span> 
+                                <input type="text" class="form-control bg-transparent border-primary" placeholder="Select date" data-input> 
+                            </div>                             
+                            <button type="button" class="btn btn-outline-primary btn-icon-text me-2 mb-2 mb-md-0"> 
+                                <i class="btn-icon-prepend" data-feather="printer"></i> 
+                                Print
+                            </button>                             
+                            <button type="button" class="btn btn-primary btn-icon-text mb-2 mb-md-0"> 
+                                <i class="btn-icon-prepend" data-feather="download-cloud"></i> 
+                                Download Report
+                            </button>                             
+                        </div>                         
+                    </div>                     
+                    <div class="row"> 
+                        <div class="col-12 col-xl-12 stretch-card"> 
+                            <div class="row flex-grow-1"> 
+                                <div class="col-md-4 grid-margin stretch-card"> 
+                                    <div class="card"> 
+                                        <div class="card-body"> 
+                                            <div class="d-flex justify-content-between align-items-baseline"> 
+                                                <h6 class="card-title mb-0">Total No. Of Documents</h6> 
+                                                <div class="dropdown mb-2"> 
+                                                    <a type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                            <div class="row"> 
+                                                <div class="col-6 col-md-12 col-xl-6"> 
+                                                    <h3>1,453,897</h3> 
+                                                    <div class="d-flex align-items-baseline"> 
+                                                        <p class="text-success">  <span>+3.3%</span>  <i data-feather="arrow-up" class="icon-sm mb-1"></i>  </p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="col-6 col-md-12 col-xl-7"> 
+                                                    <div id="customersChart" class="mt-md-3 mt-xl-0"></div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div class="col-md-4 grid-margin stretch-card"> 
+                                    <div class="card"> 
+                                        <div class="card-body"> 
+                                            <div class="d-flex justify-content-between align-items-baseline"> 
+                                                <h6 class="card-title mb-0">No. Of Indexed Doc.</h6> 
+                                                <div class="dropdown mb-2"> 
+                                                    <a type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1"> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                            <div class="row"> 
+                                                <div class="col-6 col-md-12 col-xl-5"> 
+                                                    <h3 class="mb-2">35,084</h3> 
+                                                    <div class="d-flex align-items-baseline"> 
+                                                        <p class="text-danger">  <span>-2.8%</span>  <i data-feather="arrow-down" class="icon-sm mb-1"></i>  </p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="col-6 col-md-12 col-xl-7"> 
+                                                    <div id="ordersChart" class="mt-md-3 mt-xl-0"></div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div class="col-md-4 grid-margin stretch-card"> 
+                                    <div class="card"> 
+                                        <div class="card-body"> 
+                                            <div class="d-flex justify-content-between align-items-baseline"> 
+                                                <h6 class="card-title mb-0">Rate Of Approved Doc.</h6> 
+                                                <div class="dropdown mb-2"> 
+                                                    <a type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2"> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                            <div class="row"> 
+                                                <div class="col-6 col-md-12 col-xl-5"> 
+                                                    <h3 class="mb-2">89.87%</h3> 
+                                                    <div class="d-flex align-items-baseline"> 
+                                                        <p class="text-success">  <span>+2.8%</span>  <i data-feather="arrow-up" class="icon-sm mb-1"></i>  </p> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="col-6 col-md-12 col-xl-7"> 
+                                                    <div id="growthChart" class="mt-md-3 mt-xl-0"></div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+
+                    <!-- row -->                     
+                    <div class="row"> 
+                        <div class="col-12 col-xl-12 grid-margin stretch-card"> 
+                            <div class="card overflow-hidden"> 
+                                <div class="card-body"> 
+                                    <div class="d-flex justify-content-between align-items-baseline mb-4 mb-md-3"> 
+                                        <h6 class="card-title mb-0">Archived Documents</h6> 
+                                        <div class="dropdown"> 
+                                            <a type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3"> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="row align-items-start"> 
+                                        <div class="col-md-7"> 
+                                            <p class="text-muted tx-13 mb-3 mb-md-0">The Total Number of Archived Documents, Finished All Process</p> 
+                                        </div>                                         
+                                        <div class="col-md-5 d-flex justify-content-md-end"> 
+                                            <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example"> 
+                                                <button type="button" class="btn btn-outline-primary">Today</button>                                                 
+                                                <button type="button" class="btn btn-outline-primary d-none d-md-block">Week</button>                                                 
+                                                <button type="button" class="btn btn-outline-primary">Month</button>                                                 
+                                                <button type="button" class="btn btn-primary">Year</button>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div id="revenueChart"></div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+
+                    <!-- row -->                     
+                    <div class="row"> 
+                        <div class="col-lg-7 col-xl-8 grid-margin stretch-card"> 
+                            <div class="card"> 
+                                <div class="card-body"> 
+                                    <div class="d-flex justify-content-between align-items-baseline mb-2"> 
+                                        <h6 class="card-title mb-0">Document Status</h6> 
+                                        <div class="dropdown mb-2"> 
+                                            <a type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4"> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="row align-items-start"> 
+                                        <div class="col-md-7"> 
+                                            <p class="text-muted tx-13 mb-3 mb-md-0">Presents a visual representation of the distribution of document statuses.</p> 
+                                        </div>                                         
+                                        <div class="col-md-5 d-flex justify-content-md-end"> 
+                                            <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example"> 
+                                                <button type="button" class="btn btn-outline-primary">Today</button>                                                 
+                                                <button type="button" class="btn btn-outline-primary d-none d-md-block">Week</button>                                                 
+                                                <button type="button" class="btn btn-primary">Month</button>                                                 
+                                                <button type="button" class="btn btn-outline-primary">Year</button>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>       
+                                    
+                                    <canvas id="documentStatusChart"></canvas>
+
+                                    <script>
+                                      // JavaScript code for generating the chart
+                                      // ... (Insert the JavaScript code provided in the previous response here)
+                                    // Sample data representing the number of documents in each status category
+const documentStatusData = {
+  scanned: 50,
+  indexed: 30,
+  approved: 20,
+  rejected: 10,
+};
+
+// Get the canvas element from the HTML
+const chartCanvas = document.getElementById('documentStatusChart');
+
+// Create a new chart instance
+const chart = new Chart(chartCanvas, {
+  type: 'bar', // You can change the chart type to suit your needs (e.g., 'pie', 'doughnut', 'line', etc.)
+  data: {
+    labels: Object.keys(documentStatusData), // Use the status categories as labels
+    datasets: [
+      {
+        label: 'Document Status',
+        data: Object.values(documentStatusData), // Use the number of documents as data points
+        backgroundColor: 'rgba(54, 162, 235, 0.5)', // You can customize the colors as needed
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          precision: 0, // Ensure whole numbers are displayed on the y-axis
+        },
+      },
+    },
+  },
+});
+
+                                    </script>                                    
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="col-lg-5 col-xl-4 grid-margin stretch-card"> 
+                            <div class="card"> 
+                                <div class="card-body"> 
+                                    <div class="d-flex justify-content-between align-items-baseline"> 
+                                        <h6 class="card-title mb-0">Server storage</h6> 
+                                        <div class="dropdown mb-2"> 
+                                            <a type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5"> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div id="storageChart"></div>                                     
+                                    <div class="row mb-3"> 
+                                        <div class="col-6 d-flex justify-content-end"> 
+                                            <div> 
+                                                <label class="d-flex align-items-center justify-content-end tx-10 text-uppercase fw-bolder">Total storage 
+                                                    <span class="p-1 ms-1 rounded-circle bg-secondary"></span>
+                                                </label>                                                 
+                                                <h5 class="fw-bolder mb-0 text-end">8TB</h5> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-6"> 
+                                            <div> 
+                                                <label class="d-flex align-items-center tx-10 text-uppercase fw-bolder">
+                                                    <span class="p-1 me-1 rounded-circle bg-primary"></span> Used storage
+                                                </label>                                                 
+                                                <h5 class="fw-bolder mb-0">~5TB</h5> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="d-grid"> 
+                                        <button class="btn btn-primary">Storage Details</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>  
+                     <!-- row -->   
+                
+                
+                     <!-- row -->                     
+                    <div class="row"> 
+                        <div class="col-lg-7 col-xl-8 grid-margin stretch-card"> 
+                            <div class="card"> 
+                                <div class="card-body"> 
+                                    <div class="d-flex justify-content-between align-items-baseline mb-2"> 
+                                        <h6 class="card-title mb-0">Department Performance</h6> 
+                                        <div class="dropdown mb-2"> 
+                                            <a type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4"> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="row align-items-start"> 
+                                        <div class="col-md-7"> 
+                                            <p class="text-muted tx-13 mb-3 mb-md-0">•	Allows decision makers to monitor the performance of different departments within the institute.</p> 
+                                        </div>                                         
+                                        <div class="col-md-5 d-flex justify-content-md-end"> 
+                                            <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example"> 
+                                                <button type="button" class="btn btn-outline-primary">Today</button>                                                 
+                                                <button type="button" class="btn btn-outline-primary d-none d-md-block">Week</button>                                                 
+                                                <button type="button" class="btn btn-primary">Month</button>                                                 
+                                                <button type="button" class="btn btn-outline-primary">Year</button>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>       
+                                    
+                                    <canvas id="departmentPerformanceChart"></canvas>
+
+                                    <script>
+                                     // Sample data representing the performance metrics for each department
+const departmentPerformanceData1 = [
+  { department: 'HR', documentsProcessed: 500, averageProcessingTime: 35, completionRate: 85 },
+  { department: 'Finance', documentsProcessed: 700, averageProcessingTime: 42, completionRate: 92 },
+  { department: 'IT', documentsProcessed: 400, averageProcessingTime: 28, completionRate: 78 },
+  { department: 'Marketing', documentsProcessed: 600, averageProcessingTime: 38, completionRate: 80 },
+];
+
+// Extract department names and corresponding metrics from the data
+const departmentNames = departmentPerformanceData1.map((department) => department.department);
+const documentsProcessed1 = departmentPerformanceData1.map((department) => department.documentsProcessed);
+const averageProcessingTime1 = departmentPerformanceData1.map((department) => department.averageProcessingTime);
+const completionRate1 = departmentPerformanceData1.map((department) => department.completionRate);
+
+// Get the canvas element from the HTML
+const chartCanvas1 = document.getElementById('departmentPerformanceChart');
+
+// Create a new chart instance
+const chart1 = new Chart(chartCanvas1, {
+  type: 'bar', // You can change the chart type to suit your needs (e.g., 'pie', 'doughnut', 'line', etc.)
+  data: {
+    labels: departmentNames, // Use the department names as labels
+    datasets: [
+      {
+        label: 'Documents Processed',
+        data: documentsProcessed1, // Use the number of documents processed as data points
+        backgroundColor: 'rgba(54, 162, 235, 0.5)', // You can customize the colors as needed
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1,
+      },
+      {
+        label: 'Average Processing Time',
+        data: averageProcessingTime1, // Use the average processing time as data points
+        backgroundColor: 'rgba(255, 99, 132, 0.5)', // You can customize the colors as needed
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1,
+      },
+      {
+        label: 'Completion Rate',
+        data: completionRate1, // Use the completion rate as data points
+        backgroundColor: 'rgba(75, 192, 192, 0.5)', // You can customize the colors as needed
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          precision: 0, // Ensure whole numbers are displayed on the y-axis
+        },
+      },
+    },
+  },
+});
+
+
+
+                                    </script>                                    
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="col-lg-5 col-xl-4 grid-margin stretch-card"> 
+                            <div class="card"> 
+                                <div class="card-body"> 
+                                    <div class="d-flex justify-content-between align-items-baseline"> 
+                                        <h6 class="card-title mb-0">Achievement Progress</h6> 
+                                        <div class="dropdown mb-2"> 
+                                            <a type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5"> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div>
+                                        <canvas id="achievementProgressChart"></canvas>
+                                      </div>  
+                                      <script>
+                                        // Sample data representing the achievement progress
+const achievementProgressData = {
+  completed: 20,
+  pending: 10,
+  inProgress: 15,
+  delayed: 5,
+};
+
+// Get the canvas element from the HTML
+const achievementChartCanvas = document.getElementById('achievementProgressChart');
+
+// Create a new chart instance for achievement progress
+const achievementChart = new Chart(achievementChartCanvas, {
+  type: 'doughnut',
+  data: {
+    labels: Object.keys(achievementProgressData),
+    datasets: [
+      {
+        data: Object.values(achievementProgressData),
+        backgroundColor: [
+          'rgba(75, 192, 192, 0.5)',
+          'rgba(54, 162, 235, 0.5)',
+          'rgba(255, 206, 86, 0.5)',
+          'rgba(255, 99, 132, 0.5)',
+        ],
+        borderColor: [
+          'rgba(75, 192, 192, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(255, 99, 132, 1)',
+        ],
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    legend: {
+      position: 'bottom',
+    },
+  },
+});
+
+
+                                      </script>                                  
+                                    <div class="row mb-3"> 
+                                        <div class="col-6 d-flex justify-content-end"> 
+                                            <div> 
+                                                                                                
+                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-6"> 
+                                            <div> 
+                                                <label class="d-flex align-items-center tx-10 text-uppercase fw-bolder">
+                                                    <span class="p-1 me-1 rounded-circle bg-primary"></span> 
+                                                </label>                                                 
+                                               
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="col-md-12 d-flex justify-content-md-end"> 
+                                        <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example"> 
+                                            <button type="button" class="btn btn-outline-primary">Today</button>                                                 
+                                            <button type="button" class="btn btn-outline-primary d-none d-md-block">Week</button>                                                 
+                                            <button type="button" class="btn btn-primary">Month</button>                                                 
+                                            <button type="button" class="btn btn-outline-primary">Year</button>                                                 
+                                        </div>                                             
+                                    </div>                                       
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>  
+                  
+
+
+                                         <!-- row -->                     
+                                         <div class="row"> 
+                                            <div class="col-12 col-xl-12 grid-margin stretch-card"> 
+                                                <div class="card overflow-hidden"> 
+                                                    <div class="card-body"> 
+                                                        <div class="d-flex justify-content-between align-items-baseline mb-4 mb-md-3"> 
+                                                            <h6 class="card-title mb-0">User Activity and Productivity</h6> 
+                                                            <div class="dropdown"> 
+                                                                <a type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3"> 
+                                                                    <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                                    <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                                    <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                                    <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                                    <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                                                </div>                                             
+                                                            </div>                                         
+                                                        </div>                                     
+                                                        <div class="row align-items-start"> 
+                                                            <div class="col-md-7"> 
+                                                                <p class="text-muted tx-13 mb-3 mb-md-0">•	Provides insights into the activity and productivity of system users.
+                                                                    •	Includes metrics such as the number of documents processed per user, average processing time per user, and user workload distribution.
+                                                                    </p> 
+                                                            </div>                                         
+                                                            <div class="col-md-5 d-flex justify-content-md-end"> 
+                                                                <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example"> 
+                                                                    <button type="button" class="btn btn-outline-primary">Today</button>                                                 
+                                                                    <button type="button" class="btn btn-outline-primary d-none d-md-block">Week</button>                                                 
+                                                                    <button type="button" class="btn btn-primary">Month</button>                                                 
+                                                                    <button type="button" class="btn btn-outline-primary">Year</button>                                                 
+                                                                </div>                                             
+                                                            </div>                                         
+                                                        </div>                                     
+                                                       
+                                                          
+                                                        <div>
+                                                            <canvas id="userActivityChart"></canvas>
+                                                          </div>
+                    
+                                                        <script>// Sample data representing user activity and productivity
+                                                            const userActivityData = [
+                                                              { user: 'User A', documentsProcessed: 500, averageProcessingTime: 35 },
+                                                              { user: 'User B', documentsProcessed: 700, averageProcessingTime: 42 },
+                                                              { user: 'User C', documentsProcessed: 400, averageProcessingTime: 28 },
+                                                              { user: 'User D', documentsProcessed: 600, averageProcessingTime: 38 },
+                                                            ];
+                                                            
+                                                            // Extract user names and corresponding metrics from the data
+                                                            const userNames = userActivityData.map((user) => user.user);
+                                                            const documentsProcessed = userActivityData.map((user) => user.documentsProcessed);
+                                                            const averageProcessingTime = userActivityData.map((user) => user.averageProcessingTime);
+                                                            
+                                                            // Get the canvas element from the HTML
+                                                            const userActivityChartCanvas = document.getElementById('userActivityChart');
+                                                            
+                                                            // Create a new chart instance for user activity and productivity
+                                                            const userActivityChart = new Chart(userActivityChartCanvas, {
+                                                              type: 'bar',
+                                                              data: {
+                                                                labels: userNames,
+                                                                datasets: [
+                                                                  {
+                                                                    label: 'Documents Processed',
+                                                                    data: documentsProcessed,
+                                                                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                                                                    borderColor: 'rgba(54, 162, 235, 1)',
+                                                                    borderWidth: 1,
+                                                                  },
+                                                                  {
+                                                                    label: 'Average Processing Time',
+                                                                    data: averageProcessingTime,
+                                                                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                                                                    borderColor: 'rgba(255, 99, 132, 1)',
+                                                                    borderWidth: 1,
+                                                                  },
+                                                                ],
+                                                              },
+                                                              options: {
+                                                                scales: {
+                                                                  x: {
+                                                                    stacked: true, // Stack bars for each user
+                                                                  },
+                                                                  y: {
+                                                                    beginAtZero: true,
+                                                                    ticks: {
+                                                                      precision: 0,
+                                                                    },
+                                                                  },
+                                                                },
+                                                              },
+                                                            });
+                                                            
+
+                                                      
+                                                        </script>                                    
+                                                        
+                                                    </div>                                 
+                                                </div>                             
+                                            </div>                         
+                                        </div>                     
+                    
+                                        <!-- row -->
+
+                                                                                 <!-- row -->                     
+                                                                                 <div class="row"> 
+                                                                                    <div class="col-12 col-xl-12 grid-margin stretch-card"> 
+                                                                                        <div class="card overflow-hidden"> 
+                                                                                            <div class="card-body"> 
+                                                                                                <div class="d-flex justify-content-between align-items-baseline mb-4 mb-md-3"> 
+                                                                                                    <h6 class="card-title mb-0">Employee WorkLoad</h6> 
+                                                                                                    <div class="dropdown"> 
+                                                                                                        <a type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                                                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3"> 
+                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                                                                                        </div>                                             
+                                                                                                    </div>                                         
+                                                                                                </div>                                     
+                                                                                                <div class="row align-items-start"> 
+                                                                                                    <div class="col-md-7"> 
+                                                                                                        <p class="text-muted tx-13 mb-3 mb-md-0">•	Provides insights into the activity and productivity of system users.
+                                                                                                            •	Includes metrics such as the number of documents processed per user, average processing time per user, and user workload distribution.
+                                                                                                            </p> 
+                                                                                                    </div>                                         
+                                                                                                    <div class="col-md-5 d-flex justify-content-md-end"> 
+                                                                                                        <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example"> 
+                                                                                                            <button type="button" class="btn btn-outline-primary">Today</button>                                                 
+                                                                                                            <button type="button" class="btn btn-outline-primary d-none d-md-block">Week</button>                                                 
+                                                                                                            <button type="button" class="btn btn-primary">Month</button>                                                 
+                                                                                                            <button type="button" class="btn btn-outline-primary">Year</button>                                                 
+                                                                                                        </div>                                             
+                                                                                                    </div>                                         
+                                                                                                </div>                                     
+                                                                                               
+                                                                                                  
+                                                                                                <div>
+                                                                                                    <canvas id="employeeWorkloadChart"></canvas>
+                                                                                                  </div>
+                                                            
+                                                                                                <script>
+                                                                                            // Sample data representing the workload distribution for each employee throughout the working hours
+const employeeWorkloadData = [
+  { employee: 'Employee A', workload: [0, 1, 2, 0, 0, 3, 4, 5] },
+  { employee: 'Employee B', workload: [0, 0, 1, 2, 3, 4, 5, 4] },
+  { employee: 'Employee C', workload: [0, 0, 0, 0, 1, 2, 3, 4] },
+  { employee: 'Employee D', workload: [0, 1, 2, 3, 4, 5, 4, 3] },
+];
+
+// Get the working hours of the day
+const workingHours = Array.from({ length: 8 }, (_, i) => i + 1);
+
+// Prepare the data in the required format for the bar chart
+const barChartData = employeeWorkloadData.map((employee, index) => ({
+  label: employee.employee,
+  data: employee.workload,
+  backgroundColor: `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)`,
+}));
+
+// Get the canvas element from the HTML
+const employeeWorkloadChartCanvas = document.getElementById('employeeWorkloadChart');
+
+// Create a new chart instance for employee workload distribution
+const employeeWorkloadChart = new Chart(employeeWorkloadChartCanvas, {
+  type: 'bar',
+  data: {
+    labels: workingHours.map(hour => hour.toString()),
+    datasets: barChartData,
+  },
+  options: {
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Working Hours',
+        },
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Workload',
+        },
+      },
+    },
+  },
+});
+
+                                                  
+                                        
+                                                                                    
+                                                                                                </script>                                    
+                                                                                                
+                                                                                            </div>                                 
+                                                                                        </div>                             
+                                                                                    </div>                         
+                                                                                </div>                     
+                                                            
+                                                                                <!-- row -->
+
+                                                                                                                                                                 <!-- row -->                     
+                                                                                                                                                                 <div class="row"> 
+                                                                                                                                                                    <div class="col-12 col-xl-12 grid-margin stretch-card"> 
+                                                                                                                                                                        <div class="card overflow-hidden"> 
+                                                                                                                                                                            <div class="card-body"> 
+                                                                                                                                                                                <div class="d-flex justify-content-between align-items-baseline mb-4 mb-md-3"> 
+                                                                                                                                                                                    <h6 class="card-title mb-0">Document WorkLoad</h6> 
+                                                                                                                                                                                    <div class="dropdown"> 
+                                                                                                                                                                                        <a type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                                                                                                                                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3"> 
+                                                                                                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                                                                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                                                                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                                                                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                                                                                                                                                            <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                                                                                                                                                                        </div>                                             
+                                                                                                                                                                                    </div>                                         
+                                                                                                                                                                                </div>                                     
+                                                                                                                                                                                <div class="row align-items-start"> 
+                                                                                                                                                                                    <div class="col-md-7"> 
+                                                                                                                                                                                        <p class="text-muted tx-13 mb-3 mb-md-0">•	Provides insights into the activity and productivity of system users.
+                                                                                                                                                                                            •	Includes metrics such as the number of documents processed per user, average processing time per user, and user workload distribution.
+                                                                                                                                                                                            </p> 
+                                                                                                                                                                                    </div>                                         
+                                                                                                                                                                                    <div class="col-md-5 d-flex justify-content-md-end"> 
+                                                                                                                                                                                        <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example"> 
+                                                                                                                                                                                            <button type="button" class="btn btn-outline-primary">Today</button>                                                 
+                                                                                                                                                                                            <button type="button" class="btn btn-outline-primary d-none d-md-block">Week</button>                                                 
+                                                                                                                                                                                            <button type="button" class="btn btn-primary">Month</button>                                                 
+                                                                                                                                                                                            <button type="button" class="btn btn-outline-primary">Year</button>                                                 
+                                                                                                                                                                                        </div>                                             
+                                                                                                                                                                                    </div>                                         
+                                                                                                                                                                                </div>                                     
+                                                                                                                                                                               
+                                                                                                                                                                                  
+                                                                                                                                                                                <div>
+                                                                                                                                                                                    <canvas id="documentWorkloadChart"></canvas>
+                                                                                                                                                                                  </div>
+                                                                                                                                            
+                                                                                                                                                                                <script>// Sample data representing the workload distribution for Scanning and Indexing statuses throughout the working hours
+                                                                                                                                                                                    const documentWorkloadData = [
+                                                                                                                                                                                      { hour: '9 AM', scanning: 10, indexing: 5 },
+                                                                                                                                                                                      { hour: '10 AM', scanning: 8, indexing: 7 },
+                                                                                                                                                                                      { hour: '11 AM', scanning: 6, indexing: 9 },
+                                                                                                                                                                                      { hour: '12 PM', scanning: 4, indexing: 11 },
+                                                                                                                                                                                      { hour: '1 PM', scanning: 5, indexing: 10 },
+                                                                                                                                                                                      { hour: '2 PM', scanning: 7, indexing: 8 },
+                                                                                                                                                                                      { hour: '3 PM', scanning: 9, indexing: 6 },
+                                                                                                                                                                                      { hour: '4 PM', scanning: 11, indexing: 4 },
+                                                                                                                                                                                    ];
+                                                                                                                                                                                    
+                                                                                                                                                                                    // Get the working hours of the day
+                                                                                                                                                                                    const workingHours2 = documentWorkloadData.map(data => data.hour);
+                                                                                                                                                                                    
+                                                                                                                                                                                    // Prepare the data in the required format for the stacked bar chart
+                                                                                                                                                                                    const barChartData2 = [
+                                                                                                                                                                                      {
+                                                                                                                                                                                        label: 'Scanning',
+                                                                                                                                                                                        data: documentWorkloadData.map(data => data.scanning),
+                                                                                                                                                                                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                                                                                                                                                                                      },
+                                                                                                                                                                                      {
+                                                                                                                                                                                        label: 'Indexing',
+                                                                                                                                                                                        data: documentWorkloadData.map(data => data.indexing),
+                                                                                                                                                                                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                                                                                                                                                                                      },
+                                                                                                                                                                                    ];
+                                                                                                                                                                                    
+                                                                                                                                                                                    // Get the canvas element from the HTML
+                                                                                                                                                                                    const documentWorkloadChartCanvas = document.getElementById('documentWorkloadChart');
+                                                                                                                                                                                    
+                                                                                                                                                                                    // Create a new chart instance for document workload distribution
+                                                                                                                                                                                    const documentWorkloadChart = new Chart(documentWorkloadChartCanvas, {
+                                                                                                                                                                                      type: 'bar',
+                                                                                                                                                                                      data: {
+                                                                                                                                                                                        labels: workingHours2,
+                                                                                                                                                                                        datasets: barChartData2,
+                                                                                                                                                                                      },
+                                                                                                                                                                                      options: {
+                                                                                                                                                                                        scales: {
+                                                                                                                                                                                          x: {
+                                                                                                                                                                                            title: {
+                                                                                                                                                                                              display: true,
+                                                                                                                                                                                              text: 'Working Hours',
+                                                                                                                                                                                            },
+                                                                                                                                                                                          },
+                                                                                                                                                                                          y: {
+                                                                                                                                                                                            title: {
+                                                                                                                                                                                              display: true,
+                                                                                                                                                                                              text: 'Workload',
+                                                                                                                                                                                            },
+                                                                                                                                                                                          },
+                                                                                                                                                                                        },
+                                                                                                                                                                                        plugins: {
+                                                                                                                                                                                          legend: {
+                                                                                                                                                                                            display: true,
+                                                                                                                                                                                            position: 'bottom',
+                                                                                                                                                                                          },
+                                                                                                                                                                                        },
+                                                                                                                                                                                      },
+                                                                                                                                                                                    });
+                                                                                                                                                                                    
+                                                                                                                                                                           
+                                                                                
+                                                                                                                                  
+                                                                                                                        
+                                                                                                                                                                    
+                                                                                                                                                                                </script>                                    
+                                                                                                                                                                                
+                                                                                                                                                                            </div>                                 
+                                                                                                                                                                        </div>                             
+                                                                                                                                                                    </div>                         
+                                                                                                                                                                </div>                     
+                                                                                                                                            
+                                                                                                                                                                <!-- row -->
+                                                                                
+
+                    <!-- row -->                     
+                    <div class="row"> 
+                        <div class="col-lg-5 col-xl-4 grid-margin grid-margin-xl-0 stretch-card"> 
+                            <div class="card"> 
+                                <div class="card-body"> 
+                                    <div class="d-flex justify-content-between align-items-baseline mb-2"> 
+                                        <h6 class="card-title mb-0">New Users</h6> 
+                                        <div class="dropdown mb-2"> 
+                                            <a type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6"> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="d-flex flex-column"> 
+                                        <a href="javascript:;" class="d-flex align-items-center border-bottom pb-3">  <div class="me-3"> 
+                                                <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user"> 
+                                            </div>  <div class="w-100"> 
+                                                <div class="d-flex justify-content-between"> 
+                                                    <h6 class="text-body mb-2">Mohamed Ahmed</h6> 
+                                                    <p class="text-muted tx-12">12.30 PM</p> 
+                                                </div>                                                 
+                                                <p class="text-muted tx-13">HR Department</p> 
+                                            </div>  </a> 
+                                        <a href="javascript:;" class="d-flex align-items-center border-bottom py-3">  <div class="me-3"> 
+                                                <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user"> 
+                                            </div>  <div class="w-100"> 
+                                                <div class="d-flex justify-content-between"> 
+                                                    <h6 class="text-body mb-2">Maha Aly</h6> 
+                                                    <p class="text-muted tx-12">02.14 AM</p> 
+                                                </div>                                                 
+                                                <p class="text-muted tx-13">Finance Department</p> 
+                                            </div>  </a> 
+                                        <a href="javascript:;" class="d-flex align-items-center border-bottom py-3">  <div class="me-3"> 
+                                                <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user"> 
+                                            </div>  <div class="w-100"> 
+                                                <div class="d-flex justify-content-between"> 
+                                                    <h6 class="text-body mb-2">Soha Ahmed</h6> 
+                                                    <p class="text-muted tx-12">08.22 PM</p> 
+                                                </div>                                                 
+                                                <p class="text-muted tx-13">IT Department</p> 
+                                            </div>  </a> 
+                                        <a href="javascript:;" class="d-flex align-items-center border-bottom py-3">  <div class="me-3"> 
+                                                <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user"> 
+                                            </div>  <div class="w-100"> 
+                                                <div class="d-flex justify-content-between"> 
+                                                    <h6 class="text-body mb-2">Amira Lotfi</h6> 
+                                                    <p class="text-muted tx-12">05.49 AM</p> 
+                                                </div>                                                 
+                                                <p class="text-muted tx-13">Marketing Department</p> 
+                                            </div>  </a> 
+                                        <a href="javascript:;" class="d-flex align-items-center border-bottom py-3">  <div class="me-3"> 
+                                                <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user"> 
+                                            </div>  <div class="w-100"> 
+                                                <div class="d-flex justify-content-between"> 
+                                                    <h6 class="text-body mb-2">Maher Ahmed</h6> 
+                                                    <p class="text-muted tx-12">01.19 AM</p> 
+                                                </div>                                                 
+                                                <p class="text-muted tx-13">Hr Department</p> 
+                                            </div>  </a> 
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="col-lg-7 col-xl-8 stretch-card"> 
+                            <div class="card"> 
+                                <div class="card-body"> 
+                                    <div class="d-flex justify-content-between align-items-baseline mb-2"> 
+                                        <h6 class="card-title mb-0">Recent Activity</h6> 
+                                        <div class="dropdown mb-2"> 
+                                            <a type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>  </a> 
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton7"> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a> 
+                                                <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="table-responsive"> 
+                                        <table class="table table-hover mb-0"> 
+                                            <thead> 
+                                                <tr> 
+                                                    <th class="pt-0">#</th> 
+                                                    <th class="pt-0">File Name</th> 
+                                                    <th class="pt-0">Date</th> 
+                                                    
+                                                    <th class="pt-0">Activity</th> 
+                                                    <th class="pt-0">Assign</th> 
+                                                </tr>                                                 
+                                            </thead>                                             
+                                            <tbody> 
+                                                <tr> 
+                                                    <td>1</td> 
+                                                    <td> jQuery</td> 
+                                                    <td>01/01/2022</td> 
+                                                     
+                                                    <td><span class="badge bg-danger">Reject</span></td> 
+                                                    <td>Ayman Gamal</td> 
+                                                </tr>                                                 
+                                                <tr> 
+                                                    <td>2</td> 
+                                                    <td> Angular</td> 
+                                                    <td>01/01/2022</td> 
+                                                    
+                                                    <td><span class="badge bg-success">Review</span></td> 
+                                                    <td>Bahaa</td> 
+                                                </tr>                                                 
+                                                <tr> 
+                                                    <td>3</td> 
+                                                    <td>NobleUI ReactJs</td> 
+                                                    <td>01/05/2022</td> 
+                                                    
+                                                    <td><span class="badge bg-info">Indexing</span></td> 
+                                                    <td>Rehab Ahmed</td> 
+                                                </tr>                                                 
+                                                <tr> 
+                                                    <td>4</td> 
+                                                    <td> VueJs</td> 
+                                                    <td>01/01/2022</td> 
+                                                    
+                                                    <td><span class="badge bg-warning">Approved</span>  </td> 
+                                                    <td>Shayma</td> 
+                                                </tr>                                                 
+                                                <tr> 
+                                                    <td>5</td> 
+                                                    <td> Laravel</td> 
+                                                    <td>01/01/2022</td> 
+                                                     
+                                                    <td><span class="badge bg-danger">Reject</span></td> 
+                                                    <td>Hazem Morsy</td> 
+                                                </tr>                                                 
+                                                <tr> 
+                                                    <td>6</td> 
+                                                    <td> NodeJs</td> 
+                                                    <td>01/01/2022</td> 
+                                                     
+                                                    <td><span class="badge bg-primary">Scanning</span></td> 
+                                                    <td>Mohamed Sayed</td> 
+                                                </tr>                                                 
+                                                <tr> 
+                                                    <td class="border-bottom">3</td> 
+                                                    <td class="border-bottom">EmberJs</td> 
+                                                    <td class="border-bottom">01/05/2022</td> 
+                                                     
+                                                    <td class="border-bottom"><span class="badge bg-info">Indexing</span></td> 
+                                                    <td class="border-bottom">Hazem Morsy</td> 
+                                                </tr>                                                 
+                                            </tbody>                                             
+                                        </table>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+
+                    <!-- row -->                     
+                </div>                 
+                <!-- partial:partials/_footer.html -->                 
+                <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-3 border-top small"> 
+                    <p class="text-muted mb-1 mb-md-0">Copyright © 2023 <a href="https://www.IT-Blocks.com" target="_blank">IT-Blocks</a>.</p> 
+                    <p class="text-muted">Handcrafted With <i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i></p> 
+                </footer>                 
+                <!-- partial -->                 
+            </div>             
+        </div>         
+        <!-- core:js -->         
+        <script src="../assets/vendors/core/core.js"></script>         
+        <!-- endinject -->         
+        <!-- Plugin js for this page -->         
+        <script src="../assets/vendors/flatpickr/flatpickr.min.js"></script>         
+        <script src="../assets/vendors/apexcharts/apexcharts.min.js"></script>         
+        <!-- End plugin js for this page -->         
+        <!-- inject:js -->         
+        <script src="../assets/vendors/feather-icons/feather.min.js"></script>         
+        <script src="../assets/js/template.js"></script>         
+        <!-- endinject -->         
+        <!-- Custom js for this page -->         
+        <script src="../assets/js/dashboard-light.js"></script>         
+        <!-- End custom js for this page -->         
+    </body>     
+</html> 
